@@ -10,7 +10,7 @@ function App() {
 
   return (
 
-    
+
     <>
       <div
         style={{
@@ -21,44 +21,44 @@ function App() {
           height: "100vh",
         }}
       >
-        <h1>Color Changer</h1>
+        <h1 style={{color: bgColor === 'green' || bgColor === 'blue' || bgColor === 'red' ?'white':'black',fontFamily:"monospace" }}>Color Changer</h1>
         <br />
         <Button
-          variant="outlined"
-          className="text-dark fw-bolder mx-2  border-dark"
-          style={{ width: "120px", height: "80px", backgroundColor: "red" }}
+          variant="contained"
+          className="text-light fw-bolder mx-2  border-dark"
+          style={{ width: "120px", height: "80px", backgroundColor: "red" , fontSize:"1.2rem",fontFamily:"monospace" }}
           onClick={() => colorChange("red")}
         >
           Red
         </Button>
         <Button
-          variant="outlined"
+          variant="contained"
           className="text-dark fw-bolder mx-2  border-dark"
-          style={{ width: "120px", height: "80px", backgroundColor: "yellow" }}
+          style={{ width: "120px", height: "80px", backgroundColor: "yellow", fontSize:"1.2rem" ,fontFamily:"monospace" }}
           onClick={() => colorChange("yellow")}
         >
           Yellow
         </Button>
         <Button
-          variant="outlined"
+          variant="contained"
           className="text-light fw-bolder mx-2  border-dark"
-          style={{ width: "120px", height: "80px", backgroundColor: "blue" }}
+          style={{ width: "120px", height: "80px", backgroundColor: "blue" , fontSize:"1.2rem",fontFamily:"monospace" }}
           onClick={() => colorChange("blue")}
         >
           Blue
         </Button>
         <Button
-          variant="outlined"
+          variant="contained"
           className="mx-2  border-dark text-dark fw-bolder"
-          style={{ width: "120px", height: "80px", backgroundColor: "white" }}
+          style={{ width: "120px", height: "80px", backgroundColor: "white" , fontSize:"1.2rem",fontFamily:"monospace" }}
           onClick={() => colorChange("white")}
         >
           White
         </Button>
         <Button
-          variant="outlined"
+          variant="contained"
           className="text-light fw-bolder mx-2  border-dark"
-          style={{ width: "120px", height: "80px", backgroundColor: "green" }}
+          style={{ width: "120px", height: "80px", backgroundColor: "green" , fontSize:"1.2rem",fontFamily:"monospace" }}
           onClick={() => colorChange("green")}
         >
           Green
